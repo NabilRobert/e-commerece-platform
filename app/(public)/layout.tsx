@@ -1,4 +1,3 @@
-import NavBar from "@/components/navbar/navbar";
 
 export default function PublicLayout({
     children,
@@ -7,8 +6,9 @@ export default function PublicLayout({
 }) {
     return (
         <>
-            <NavBar />
-            <main>{children}</main>
+            <main>
+                {children}
+            </main>
         </>
     )
 }
