@@ -3,12 +3,12 @@ import Button from "../ui/Button/button"
 import CategoriesCard from "../ui/CategoryCard/CategoryCard"
 
 const categories = [
-    {name: "cat1", slug:"cat-1"},
-    {name: "cat2", slug:"cat-2"},
-    {name: "cat3", slug:"cat-3"},
-    {name: "cat4", slug:"cat-4"},
-    {name: "cat5", slug:"cat-5"},
-    {name: "cat6", slug:"cat-6"},
+    {name: "cat1", slug:"cat-1", image:"/assets/cat.svg"},
+    {name: "cat2", slug:"cat-2", image:"/assets/cat.svg"},
+    {name: "cat3", slug:"cat-3", image:"/assets/cat.svg"},
+    {name: "cat4", slug:"cat-4", image:"/assets/cat.svg"},
+    {name: "cat5", slug:"cat-5", image:"/assets/cat.svg"},
+    {name: "cat6", slug:"cat-6", image:"/assets/cat.svg"},
 ]
 export default function Categories(){
     return(
@@ -30,6 +30,7 @@ export default function Categories(){
             key={category.slug} 
             name={category.name} 
             slug={category.slug}
+            image={category.image}
             />
           ))}
         </div>
