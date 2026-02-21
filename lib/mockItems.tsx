@@ -17,7 +17,7 @@ export const mockItems: Item[] = [
     price: 9000,
     description: "string",
     category: "string",
-    image: "/homepage/cat.svg",
+    image: "/assets/cat.svg",
     featured: true,
 },
 {
@@ -27,7 +27,7 @@ export const mockItems: Item[] = [
     price: 9000,
     description: "string",
     category: "string",
-    image: "/homepage/cat.svg",
+    image: "/assets/cat.svg",
     featured: true,
 },
 {
@@ -37,7 +37,17 @@ export const mockItems: Item[] = [
     price: 9000,
     description: "string",
     category: "string",
-    image: "/homepage/cat.svg",
-    featured: false,
+    image: "/assets/cat.svg",
+    featured: true,
+},
+{
+    id: "4",
+    title: "string 4",
+    name: "string 4",
+    price: 9000,
+    description: "string",
+    category: "string",
+    image: "/assets/cat.svg",
+    featured: true,
 }
 ]

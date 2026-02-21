@@ -18,7 +18,7 @@ export default function CategoriesCard({
       href={`/categories/${slug}`}
       className="flex h-40 items-center justify-center rounded-lg bg-gray-100 text-lg font-medium transition hover:bg-gray-200"
     >
-      <div className="relative h-40 overflow-hidden rounded-lg group cursor-pointer relative h-40 w-full">
+      <div className="relative overflow-hidden rounded-lg group cursor-pointer  h-40 w-full">
 
         <Image
           src={image}
