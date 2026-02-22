@@ -5,7 +5,6 @@ export default function AccoladesSection() {
 
         <div className="grid gap-10 text-center md:grid-cols-4">
 
-          {/* 1 */}
           <div>
             <div className="text-3xl">🕒</div>
             <h3 className="mt-4 text-lg font-semibold">
@@ -16,7 +15,6 @@ export default function AccoladesSection() {
             </p>
           </div>
 
-          {/* 2 */}
           <div>
             <div className="text-3xl">🚚</div>
             <h3 className="mt-4 text-lg font-semibold">
@@ -27,7 +25,6 @@ export default function AccoladesSection() {
             </p>
           </div>
 
-          {/* 3 */}
           <div>
             <div className="text-3xl">🔒</div>
             <h3 className="mt-4 text-lg font-semibold">
@@ -38,7 +35,6 @@ export default function AccoladesSection() {
             </p>
           </div>
 
-          {/* 4 */}
           <div>
             <div className="text-3xl">⭐</div>
             <h3 className="mt-4 text-lg font-semibold">
