@@ -2,7 +2,7 @@ import { mockItems } from "@/lib/mockItems";
 import ItemGrid from "./ItemGrid";
 
 export default function ItemSection() {
-    const featuredItems = mockItems.filter((item) => item.featured)
+    const featuredItems = mockItems.filter((item) => item.featured === true)
 
     return (
         <section className="py-20 bg-gray-50">
