@@ -8,6 +8,7 @@ export type Item = {
     slug: string
     description: string
     featured?: boolean
+    stock: number
 }
 
 export const mockItems: Item[] = [
@@ -21,6 +22,7 @@ export const mockItems: Item[] = [
     category: "string",
     image: "/assets/cat.svg",
     featured: true,
+    stock: 10,
 },
 {
     id: "2",
@@ -32,6 +34,7 @@ export const mockItems: Item[] = [
     category: "string",
     image: "/assets/cat.svg",
     featured: true,
+    stock: 10,
 },
 {
     id: "3",
@@ -43,6 +46,7 @@ export const mockItems: Item[] = [
     category: "string",
     image: "/assets/cat.svg",
     featured: true,
+    stock: 10,
 },
 {
     id: "4",
@@ -54,5 +58,16 @@ export const mockItems: Item[] = [
     category: "string",
     image: "/assets/cat.svg",
     featured: true,
+    stock: 10,
 }
 ]
+
+export async function getAllProducts(): Promise<Item[]> {
+    return mockItems
+}
+
+export async function getProductBySlug(
+  slug: string
+): Promise<Item | null> {
+  return mockItems.find((p) => p.slug === slug) ?? null
+}
