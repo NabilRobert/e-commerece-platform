@@ -66,8 +66,7 @@ export async function getAllProducts(): Promise<Item[]> {
     return mockItems
 }
 
-export async function getProductBySlug(
-  slug: string
-): Promise<Item | null> {
+export async function getProductBySlug(slug: string) {
+  await new Promise((resolve) => setTimeout(resolve, 2000))
   return mockItems.find((p) => p.slug === slug) ?? null
 }
