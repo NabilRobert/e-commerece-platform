@@ -9,6 +9,7 @@ export type Item = {
     description: string
     featured?: boolean
     stock: number
+    storepage?: string
 }
 
 export const mockItems: Item[] = [
@@ -22,6 +23,7 @@ export const mockItems: Item[] = [
     category: "string",
     image: "/assets/cat.svg",
     featured: true,
+    storepage: "store-page",
     stock: 10,
 },
 {
