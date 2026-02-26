@@ -5,9 +5,9 @@ import Link from "next/link"
 
 type Props  = Item
 
-export default function ItemCard({name, price, image}: Props){
+export default function ItemCard({name, price, image, slug}: Props){
     return(
-      <Link href="/">
+      <Link href={`/products/${slug}`}>
       <div className="rounded-lg border bg-white p-4 shadow-sm hover:shadow-md transition">
         <div className="relative h-40 w-full overflow-hidden rounded-md">
           <Image
@@ -25,7 +25,6 @@ export default function ItemCard({name, price, image}: Props){
       <div className="mt-4">
         <Button size="sm">Add to Cart</Button>
       </div>
-
     </div>
     </Link>
     )
