@@ -55,7 +55,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
     <h2 className="text-xl font-bold">
       Other products you might be interested in:
     </h2>
-
     <ItemSection />
   </div>
 </div>
