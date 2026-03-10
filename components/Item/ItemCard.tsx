@@ -1,11 +1,16 @@
+"use client"
 import Image from "next/image"
 import { Item } from "@/lib/mockItems"
 import Button from "../ui/Button/button"
 import Link from "next/link"
+import { useCartStore } from "@/lib/store/cartstore"
+type Props  = {
+  item: Item
+} 
 
-type Props  = Item
-
-export default function ItemCard({name, price, image, slug}: Props){
+export default function ItemCard({ item }: Props){
+  const addItem = useCartStore((state) => state.addItem)
+  const { name, price, image, slug } = item
     return(
       <Link href={`/products/${slug}`}>
       <div className="rounded-lg border bg-white p-4 shadow-sm hover:shadow-md transition">
@@ -23,7 +28,7 @@ export default function ItemCard({name, price, image, slug}: Props){
       <p className="mt-1 text-gray-600">${price}</p>
 
       <div className="mt-4">
-        <Button size="sm">Add to Cart</Button>
+        <Button onClick={() =>addItem(item)} size="sm">Add to Cart</Button>
       </div>
     </div>
     </Link>

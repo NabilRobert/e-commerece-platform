@@ -12,7 +12,7 @@ export default function ItemGrid({items}:Props) {
     return (
     <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
         {items.map((item) => (
-            <ItemCard key={item.id} {...item} />
+            <ItemCard key={item.id} item={item} />
       ))}
     </div>
     )

@@ -7,6 +7,7 @@ type CartStore = {
     addItem: (item:Item) => void
     removeItem: (id:string) => void
     increaseQuantity: (id:string) => void
+    decreaseQuantity: (id:string) => void
     clearCart: () => void
 }
 
@@ -45,7 +46,7 @@ export const useCartStore = create<CartStore>((set) => ({
       )
     })),
 
-  decreaseQuantity: (id:string) =>
+  decreaseQuantity: (id) =>
     set((state) => ({
       items: state.items
         .map((item) =>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
@@ -24,6 +25,15 @@ export default function NavBar() {
     </div>
 
     <div className="ml-auto flex items-center gap-4">
+      <Link href="/cart" className="text-sm text-gray-300 hover:text-black">
+      <Image 
+      src="/icon/cart.svg"
+      alt="cart icon"
+      width={24} 
+      height={24}
+      className="invert-100"
+      />
+      </Link>
       <Link href="/login" className="text-sm text-gray-300 hover:text-black">
         Login
       </Link>
